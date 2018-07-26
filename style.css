@@ -1,0 +1,66 @@
+/*
+Theme Name: progector Starter theme basic
+Theme URI: https://wordpress.org/theme/dd
+Author: Francesco Ricci
+Author URI: http://progector.altervista.org/
+Description: Progector Starter theme basic è un tema basic di partenza per wordpress con header e footer rispettivamente sopra e sotto la main.L'header contiene il menu.Il footer è disattivabile impostando display su none.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: progectorlayouthmf
+Tags: one-column,only-main,theme-basic,theme,layout-hmf
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+html,body{height: 95%;padding: 0px;}
+body{background: #eee;}
+
+
+
+/*--------------------------------
+Header
+----------------------------------*/
+.header{background: darkgray;height:7%;}
+.header__menu{float: right;padding: 0;margin: 0;}
+.header__menu .menu-item{display: inline-block;}
+.header__menu .menu-item a{color:white;border: 0px solid red;display: block;padding: 20px;}
+.header__menu .menu-item a:hover{background: #000;}
+
+/*icon-bar nascosto per il menu 
+responsive sotto i 767px per smartphone*/
+.header__icon-bar{float: right;padding: 20px;display: none;}
+.header__icon-bar span{display: block;height: 3px;width: 30px;background: #fff;margin-bottom: 5px;}
+
+/*--------------------------------
+Main-Content
+----------------------------------*/
+.main{background: #fff;padding: 5px;height:85%;}
+
+
+/*--------------------------------
+Footer
+----------------------------------*/
+.footer{background: darkgray;color: #000;padding:5px;height:7%;}
+/*.footer{display: none}*/
+
+
+/*--------------------------------
+Clearfix
+----------------------------------*/
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
